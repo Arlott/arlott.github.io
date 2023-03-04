@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://arlott.github.io/</loc>
+    <loc>https://arlott.github.io/</loc>
     <lastmod>2023-03-04T17:44:42+08:00</lastmod>
   </url><url>
-    <loc>http://arlott.github.io/post/first/</loc>
+    <loc>https://arlott.github.io/post/first/</loc>
     <lastmod>2023-03-04T17:44:42+08:00</lastmod>
   </url><url>
-    <loc>http://arlott.github.io/post/</loc>
+    <loc>https://arlott.github.io/post/</loc>
     <lastmod>2023-03-04T17:44:42+08:00</lastmod>
   </url><url>
-    <loc>http://arlott.github.io/about/</loc>
+    <loc>https://arlott.github.io/about/</loc>
     <lastmod>2023-03-04T17:44:05+08:00</lastmod>
   </url><url>
-    <loc>http://arlott.github.io/categories/</loc>
+    <loc>https://arlott.github.io/categories/</loc>
   </url><url>
-    <loc>http://arlott.github.io/tags/</loc>
+    <loc>https://arlott.github.io/tags/</loc>
   </url>
 </urlset>

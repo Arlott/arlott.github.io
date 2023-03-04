@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arlott</title>
-    <link>http://arlott.github.io/</link>
+    <link>https://arlott.github.io/</link>
     <description>Recent content on Arlott</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-zh</language>
-    <lastBuildDate>Sat, 04 Mar 2023 17:44:42 +0800</lastBuildDate><atom:link href="http://arlott.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Mar 2023 17:44:42 +0800</lastBuildDate><atom:link href="https://arlott.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First</title>
-      <link>http://arlott.github.io/post/first/</link>
+      <link>https://arlott.github.io/post/first/</link>
       <pubDate>Sat, 04 Mar 2023 17:44:42 +0800</pubDate>
       
-      <guid>http://arlott.github.io/post/first/</guid>
+      <guid>https://arlott.github.io/post/first/</guid>
       <description>Arlott </description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://arlott.github.io/about/</link>
+      <link>https://arlott.github.io/about/</link>
       <pubDate>Sat, 04 Mar 2023 17:44:05 +0800</pubDate>
       
-      <guid>http://arlott.github.io/about/</guid>
+      <guid>https://arlott.github.io/about/</guid>
       <description>about </description>
     </item>
     

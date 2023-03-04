@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Arlott</title>
-    <link>http://arlott.github.io/categories/</link>
+    <link>https://arlott.github.io/categories/</link>
     <description>Recent content in Categories on Arlott</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-zh</language><atom:link href="http://arlott.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-zh</language><atom:link href="https://arlott.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
