@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Arlott',
-  description: '前端技术博客 · React · Vue · TypeScript · 性能优化',
+  description: '个人博客 · 记录生活、技术与思考',
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
