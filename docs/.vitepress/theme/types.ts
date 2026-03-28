@@ -5,4 +5,12 @@ export interface Post {
   category: string
   tags: string[]
   description: string
+  readingTime: number
+  related: RelatedPost[]
+}
+
+export interface RelatedPost {
+  title: string
+  url: string
+  date: string
 }

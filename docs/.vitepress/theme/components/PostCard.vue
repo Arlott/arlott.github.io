@@ -5,6 +5,7 @@
     </div>
     <div class="post-card__meta">
       <span v-if="post.date">📅 {{ formatDate(post.date) }}</span>
+      <span v-if="post.readingTime">🕐 约 {{ post.readingTime }} 分钟</span>
       <span v-if="post.category" class="post-card__category">{{ post.category }}</span>
     </div>
     <p v-if="post.description" class="post-card__description">{{ post.description }}</p>

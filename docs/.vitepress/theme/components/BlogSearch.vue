@@ -10,7 +10,9 @@
           placeholder="搜索文章标题、描述、内容…"
           aria-label="搜索"
         />
-        <button v-if="query" class="blog-search__clear" @click="query = ''" aria-label="清空">✕</button>
+        <button v-if="query" class="blog-search__clear" @click="query = ''" aria-label="清空">
+          ✕
+        </button>
       </div>
 
       <!-- Tag filter -->
@@ -22,8 +24,9 @@
           :tag="tag"
           :active="selectedTags.includes(tag)"
           @click="toggleTag(tag)"
-          style="cursor:pointer"
-        >{{ tag }}</TagBadge>
+          style="cursor: pointer"
+          >{{ tag }}</TagBadge
+        >
       </div>
 
       <!-- Date range -->
@@ -36,17 +39,10 @@
           aria-label="开始日期"
         />
         <span class="blog-search__date-sep">—</span>
-        <input
-          v-model="dateTo"
-          class="blog-search__date-input"
-          type="date"
-          aria-label="结束日期"
-        />
-        <button
-          v-if="hasFilters"
-          class="blog-search__clear-filters"
-          @click="clearAll"
-        >清除所有筛选</button>
+        <input v-model="dateTo" class="blog-search__date-input" type="date" aria-label="结束日期" />
+        <button v-if="hasFilters" class="blog-search__clear-filters" @click="clearAll">
+          清除所有筛选
+        </button>
       </div>
     </div>
 
@@ -88,7 +84,7 @@ const allTags = computed(() => {
 })
 
 const hasFilters = computed(
-  () => query.value || selectedTags.value.length > 0 || dateFrom.value || dateTo.value
+  () => query.value || selectedTags.value.length > 0 || dateFrom.value || dateTo.value,
 )
 
 function toggleTag(tag: string) {
@@ -114,11 +110,7 @@ function matchesQuery(post: Post, terms: string[]): boolean {
 }
 
 const filtered = computed(() => {
-  const terms = query.value
-    .trim()
-    .toLowerCase()
-    .split(/\s+/)
-    .filter(Boolean)
+  const terms = query.value.trim().toLowerCase().split(/\s+/).filter(Boolean)
 
   const from = dateFrom.value ? new Date(dateFrom.value).getTime() : 0
   const to = dateTo.value ? new Date(dateTo.value).getTime() + 86400000 : Infinity
@@ -126,10 +118,7 @@ const filtered = computed(() => {
   return props.posts.filter((post) => {
     if (!matchesQuery(post, terms)) return false
 
-    if (
-      selectedTags.value.length > 0 &&
-      !selectedTags.value.every((t) => post.tags.includes(t))
-    )
+    if (selectedTags.value.length > 0 && !selectedTags.value.every((t) => post.tags.includes(t)))
       return false
 
     if (post.date) {

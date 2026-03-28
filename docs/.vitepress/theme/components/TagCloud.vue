@@ -23,11 +23,7 @@
         <h2>#{{ tag }}</h2>
         <span class="tag-cloud__count">{{ tagMap.get(tag)?.length }}</span>
       </div>
-      <PostCard
-        v-for="post in tagMap.get(tag)"
-        :key="post.url"
-        :post="post"
-      />
+      <PostCard v-for="post in tagMap.get(tag)" :key="post.url" :post="post" />
     </div>
   </div>
 </template>
@@ -56,7 +52,7 @@ const tagMap = computed(() => {
 const sortedTags = computed<[string, number][]>(() =>
   [...tagMap.value.entries()]
     .map(([tag, arr]) => [tag, arr.length] as [string, number])
-    .sort((a, b) => b[1] - a[1])
+    .sort((a, b) => b[1] - a[1]),
 )
 
 function scrollTo(tag: string) {
