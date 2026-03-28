@@ -4,16 +4,20 @@ import PostCard from './components/PostCard.vue'
 import PostList from './components/PostList.vue'
 import BlogSearch from './components/BlogSearch.vue'
 import TagCloud from './components/TagCloud.vue'
+import RelatedPosts from './components/RelatedPosts.vue'
+import BlogLayout from './BlogLayout.vue'
 import './style.css'
 import type { Theme } from 'vitepress'
 
 export default {
   extends: DefaultTheme,
+  Layout: BlogLayout,
   enhanceApp({ app }) {
     app.component('TagBadge', TagBadge)
     app.component('PostCard', PostCard)
     app.component('PostList', PostList)
     app.component('BlogSearch', BlogSearch)
     app.component('TagCloud', TagCloud)
+    app.component('RelatedPosts', RelatedPosts)
   },
 } satisfies Theme
